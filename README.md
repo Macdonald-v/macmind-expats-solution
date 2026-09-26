@@ -35,3 +35,8 @@ Push the project to GitHub, import it into Vercel, and add:
 - `VITE_WHATSAPP_NUMBER`
 
 Resend/email notification sending should be handled by a Supabase Edge Function or your existing server-side email workflow; never expose a Resend API key in browser code.
+
+
+## Image update
+The homepage and product cards now use the uploaded Macmind Expats Solutions images from `public/images/`.
+Products that have no `image_url` in Supabase automatically use a category-based local fallback, so the `PRINT` placeholders no longer appear.
