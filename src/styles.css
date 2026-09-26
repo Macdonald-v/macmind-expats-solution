@@ -24,3 +24,7 @@
 .product-image img[src$="photocopier.jfif"],.product-image img[src$="printer.webp"]{object-fit:contain;padding:12px}
 .product-image img[src$="copyprinter.png"]{object-fit:contain;padding:6px}
 @media(max-width:560px){.hero-image{min-height:330px}.service-image{height:160px}}
+
+.product-image{height:240px;background:#edf4fa;display:grid;place-items:center;overflow:hidden}
+.product-image img{display:block;width:100%;height:100%;object-fit:contain;background:#fff}
+.hero-image{display:block;width:100%;height:100%;object-fit:cover}

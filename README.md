@@ -40,3 +40,7 @@ Resend/email notification sending should be handled by a Supabase Edge Function 
 ## Image update
 The homepage and product cards now use the uploaded Macmind Expats Solutions images from `public/images/`.
 Products that have no `image_url` in Supabase automatically use a category-based local fallback, so the `PRINT` placeholders no longer appear.
+
+
+## Image reliability update
+Product images now fall back automatically when a Supabase image URL is missing or broken. Local assets are served from `public/images/`.
