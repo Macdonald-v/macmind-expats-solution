@@ -1,10 +1,13 @@
-# Email notification
+# Supabase Edge Functions
 
-Create a Supabase Edge Function for enquiry notifications using Resend.
-Store the Resend API key as a server-side Supabase secret, not in the Vite app.
+## `send-enquiry-email`
 
-Suggested flow:
-1. Customer submits `enquiries`.
-2. Database webhook calls the Edge Function.
-3. Function sends a notification to macmindexpatss@gmail.com via Resend.
-4. Function returns without exposing the API key.
+Sends a notification email through Resend whenever the website quotation form is submitted.
+
+Set these production secrets in Supabase Edge Functions:
+
+- `RESEND_API_KEY` — your Resend API key
+- `RESEND_FROM_EMAIL` — e.g. `Macmind Expats Solutions <noreply@macmindexpatss.co.ke>` after the domain is verified in Resend
+- `NOTIFY_EMAIL` — `macmindexpatss@gmail.com`
+
+Deploy the function as `send-enquiry-email`.

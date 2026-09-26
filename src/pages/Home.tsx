@@ -2,6 +2,7 @@ import { ArrowRight, CheckCircle2, Printer, Settings, ShieldCheck } from "lucide
 import { Link } from "react-router-dom";
 import ProductCard from "@/components/ProductCard";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import HeroSlider from "@/components/HeroSlider";
 import { useProducts, useServices } from "@/hooks/useData";
 
 const serviceImages = [
@@ -39,11 +40,7 @@ export default function Home() {
         </div>
 
         <div className="hero-art">
-          <img
-            className="hero-image"
-            src="/images/consultancy.jpg"
-            alt="Professional office photocopier and printing support"
-          />
+          <HeroSlider />
           <div className="floating-card">
             <strong>Printing made dependable.</strong>
             <span>Equipment • Service • Support</span>
