@@ -17,7 +17,7 @@ export default function Home() {
 
   return <div>
     <section className="hero">
-      <div className="container hero-grid">
+      <div className="container hero-grid hero-copy-only">
         <div>
           <span className="pill">Professional Printing Solutions</span>
           <h1>Reliable printing equipment and <span>expert support.</span></h1>
@@ -38,8 +38,12 @@ export default function Home() {
             <span><CheckCircle2/> Technical support</span>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div className="hero-art">
+    <section className="homepage-slider-section" aria-label="Featured printing solutions">
+      <div className="container">
+        <div className="homepage-slider-frame">
           <HeroSlider />
           <div className="floating-card">
             <strong>Printing made dependable.</strong>
